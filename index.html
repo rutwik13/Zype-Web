@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Vokke</title>
+
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" width="150px" style="object-fit: contain;" alt="">
+    <nav>
+      <a href="#">Solutions</a>
+      <div class="dropdown">
+        <a href="#">Industries</a>
+        <div class="dropdown-menu">
+          <a href="#">Industry 1</a>
+          <a href="#">Industry 2</a>
+        </div>
+      </div>
+      <a href="#">About</a>
+      <a href="#">Case Studies</a>
+      <a href="#">Careers</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="toggle-btn" onclick="toggleSidebar()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </header>
+  <div class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="toggleSidebar()">&times;</div>
+    <ul>
+      <li><a href="#">Solutions</a></li>
+      <li onclick="toggleDropdown(this)">
+        <a href="#">Industries <i class="fa fa-chevron-down"></i></a>
+        <ul>
+          <li><a href="#">Industry 1</a></li>
+          <li><a href="#">Industry 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Case Studies</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="hero">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>DIGITAL TECHNOLOGY SPECIALISTS</h2>
+        <h4>Custom software with an average 2.8x ROI</h4>
+        <p>As a double certified ISO9001 / ISO27001 company, we build software solutions that reduce operational cost,
+          increase productivity & instantly improve margins.</p>
+        <a href="#" class="btn1">Create Digital Products <i class="fa fa-arrow-right"></i></a>
+        <div style="width: 100%; margin-top: 45px;">
+          <a href="#" class="btn2">AUTOMATE YOUR BUSINESS PROCESS <i class="fa fa-arrow-right"></i></a>
+        </div>
+        <br>
+        <div style="margin-top: 25px; margin-bottom: 40px;">
+          <a href="#" class="btn1"> <i class="fa fa-play"
+              style="background: #000; padding: 5px; border-radius: 20px;"></i> WHY VOKKE? <i
+              class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex flex-column">
+        <img src="Website-Hero-1480x1125-8.png.png" class="hero-img1 mt-auto" width="100%" alt="">
+      </div>
+
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="demo1">
+          <img src="icon1.png" class="icon" alt="">
+          <h4>Certified ISO9001 / ISO27001 for Quality & Security</h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="demo1">
+          <img src="icon2.png" class="icon" alt="">
+          <h4>Team Size Of 30+ Specialists</h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="demo1">
+          <img src="icon3.png" class="icon" alt="">
+          <h4>We’ve Helped Over 100+ Global Clients Since 2015</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="Clients">
+    <div class="marquee-container">
+      <div class="marquee">
+        <!-- Original Logos -->
+        <img src="c1.png" alt="Client Logo 1">
+        <img src="c2.png" alt="Client Logo 2">
+        <img src="c3.png" alt="Client Logo 3">
+        <img src="c4.png" alt="Client Logo 4">
+        <img src="c5.png" alt="Client Logo 5">
+        <img src="c6.png" alt="Client Logo 6">
+        <img src="c7.png" alt="Client Logo 7">
+        <img src="c8.png" alt="Client Logo 8">
+        <!-- Duplicated Logos for seamless scrolling -->
+        <img src="c1.png" alt="Client Logo 1">
+        <img src="c2.png" alt="Client Logo 2">
+        <img src="c3.png" alt="Client Logo 3">
+        <img src="c4.png" alt="Client Logo 4">
+        <img src="c5.png" alt="Client Logo 5">
+        <img src="c6.png" alt="Client Logo 6">
+        <img src="c7.png" alt="Client Logo 7">
+        <img src="c8.png" alt="Client Logo 8">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>How can we best help you</h4>
+        <h2>Bespoke software for superior business performance</h2>
+      </div>
+      <div class="col-md-6">
+        <p>We’re great at helping businesses seeking to modernise & streamline their operations through custom software
+          solutions, particularly those looking to automate processes, digitise services, and scale efficiently with
+          technology.</p>
+        <div class="aws">
+          <img src="1.png" class="aws1" alt="">
+          <img src="2.png" class="aws1" alt="">
+          <img src="3.png" class="aws1" alt="">
+        </div>
+        <div class="button-container">
+          <a href="#" class="primary-button">CREATE DIGITAL PRODUCTS</a>
+          <br>
+          <a href="#" class="secondary-link">AUTOMATE YOUR BUSINESS PROCESSES <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="Relational-database-tables-2048x1365.jpg.jpeg" class="card-img-top" alt="Digital Products">
+          <div class="card-body">
+            <h5 class="card-title">DIGITAL PRODUCTS</h5>
+            <p class="card-text">Our digital product development team will guide you from product idea generation to
+              revenue generation, leveraging existing assets in a cost-effective way.</p>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="Business-Solutions-1-2048x1366.jpg.jpeg" class="card-img-top" alt="Custom Business Solutions">
+          <div class="card-body">
+            <h5 class="card-title">CUSTOM BUSINESS SOLUTIONS</h5>
+            <p class="card-text">Custom software not only frees up valuable time for high-impact work and enhances
+              customer experience but also positions your business for growth by reducing risks and boosting
+              productivity.</p>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="Cybersecurity-2048x1458.jpg.jpeg" class="card-img-top" alt="Cybersecurity">
+          <div class="card-body">
+            <h5 class="card-title">CYBERSECURITY</h5>
+            <p class="card-text">Data is as valuable as oil and constantly targeted by adversaries. Strengthening your
+              cybersecurity has never been more critical to safeguard your business.</p>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="Artificial-Intelligence-2048x1152.jpg.jpeg" class="card-img-top" alt="AI & Business Intelligence">
+          <div class="card-body">
+            <h5 class="card-title">AI & BUSINESS INTELLIGENCE</h5>
+            <p class="card-text">Embrace the new era of computing with AI, machine learning, and data science to propel
+              your business forward. Discover how leveraging these technologies today can unlock powerful insights and
+              significantly enhance productivity.</p>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="bg">
+          <img src="Website-Hero-1480x1125-6.png.png" class="whyimg" alt="">
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h4 class="mt-4">why businesses choose to partner with Vokke</h4>
+        <h2>Over 10+ years in transformation technology</h2>
+        <p>With expertise across diverse sectors and a relentless focus on ROI, we consistently deliver solutions that
+          both delight customers and generate real returns.</p>
+        <ul class="custom-list">
+          <li>Custom software solves your unique challenges in a way that off-the-shelf solutions just can’t do.</li>
+          <li>Built for business – secure, reliable, and accessible from anywhere</li>
+          <li>We bring insights from countless industries and organisations to get you better results.</li>
+        </ul>
+        <div class="button-container">
+          <a href="#" class="primary-button">CONTACT</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="featured">
+
+    <div class="row">
+      <div class="col-md-8">
+        <h4>FEATURED SOLUTIONS CASE STUDIES</h4>
+        <h2>Tech-driven success stories to inspire your next move</h2>
+      </div>
+      <div class="col-md-4">
+        <p>From the dynamic world of finance to the intricacies of pharmaceutical tech & the fast- moving logistics
+          sector, here are some of our featured projects that have made a lasting impression.</p>
+
+        <div class="button-container">
+          <a href="#" class="primary-button1">EXPLORE ALL</a>
+        </div>
+      </div>
+    </div>
+    <hr style="color: #fff;">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="custom-card mt-3">
+          <div class="custom-card-image">
+            <img src="n1.png" alt="Pharmacy">
+          </div>
+          <div class="custom-card-content">
+            <div class="custom-card-title">Finura</div>
+            <div class="custom-card-description">Digital Advice Technology from Idea to Launch <a href="#"
+                class="custom-card-link"> <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card mt-3">
+          <div class="custom-card-image">
+            <img src="n2.jpeg" alt="Pharmacy">
+          </div>
+          <div class="custom-card-content">
+            <div class="custom-card-title">Jumbocorp</div>
+            <div class="custom-card-description">4x Growth with Logistics & Finance Automation <a href="#"
+                class="custom-card-link"> <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card mt-3">
+          <div class="custom-card-image">
+            <img src="n3.jpg" alt="Pharmacy">
+          </div>
+          <div class="custom-card-content">
+            <div class="custom-card-title">Omron Automation</div>
+            <div class="custom-card-description">3,500% Increase in Online Sales with a Bespoke e-store and ERP
+              Integration <a href="#" class="custom-card-link"> <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card mt-3">
+          <div class="custom-card-image">
+            <img src="n4.png" alt="Pharmacy">
+          </div>
+          <div class="custom-card-content">
+            <div class="custom-card-title">SellSmart</div>
+            <div class="custom-card-description">PropTech Marketplace from Idea to Launch <a href="#"
+                class="custom-card-link"> <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card mt-3">
+          <div class="custom-card-image">
+            <img src="n5.jpg" alt="Pharmacy">
+          </div>
+          <div class="custom-card-content">
+            <div class="custom-card-title">PharmConsult</div>
+            <div class="custom-card-description">E-Sourcing, Analysis & Optimisation <a href="#"
+                class="custom-card-link"> <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card mt-3">
+          <div class="custom-card-image">
+            <img src="n6.png" alt="Pharmacy">
+          </div>
+          <div class="custom-card-content">
+            <div class="custom-card-title">Officeboy</div>
+            <div class="custom-card-description">Quoting & Document Management <a href="#" class="custom-card-link"> <i
+                  class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card mt-3">
+          <div class="custom-card-image">
+            <img src="n7.jpg" alt="Pharmacy">
+          </div>
+          <div class="custom-card-content">
+            <div class="custom-card-title">Melbourne Neuropsychology Services</div>
+            <div class="custom-card-description">Patient Management Software <a href="#" class="custom-card-link"> <i
+                  class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card mt-3">
+          <div class="custom-card-image">
+            <img src="n8.jpg" alt="Pharmacy">
+          </div>
+          <div class="custom-card-content">
+            <div class="custom-card-title">Edge Financial Planning</div>
+            <div class="custom-card-description">Workflow Management Solution <a href="#" class="custom-card-link"> <i
+                  class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="custom-card mt-3">
+          <div class="custom-card-image">
+            <img src="n9.png" alt="Pharmacy">
+          </div>
+          <div class="custom-card-content">
+            <div class="custom-card-title">The Imperial College of London</div>
+            <div class="custom-card-description">REAL TIME, SEARCHABLE, 10 BILLION DATA POINT DATABASE <a href="#"
+                class="custom-card-link"> <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="row">
+      <div class="col-md-7">
+        <h4>Start your digital transformation journey</h4>
+        <h2>What makes Vokke your #1 ultimate choice</h2>
+        <p>Through reducing tedious, repetitive tasks, you empower your team to focus on delivering true value. With the
+          power of machine learning & data science at your fingertips, the transformation of your business isn’t just
+          imminent, it’s already here.</p>
+        <div class="button-container">
+          <a href="#" class="primary-button">GET IN TOUCH</a>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="circle-img d-none d-sm-block">
+          <img src="image1-1.png.png" class="robo" alt="">
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="custom-card1">
+          <img src="i1.svg" class="custom-card1-icon" alt="Icon 1">
+          <div class="custom-card1-body">
+            <h5 class="custom-card1-title">100% QUALITY & SECURITY FOCUSED</h5>
+            <p class="custom-card-text">Among the elite 5% of companies with ISO ISO9001 / ISO27001 certifications,
+              Vokke prioritises top-tier quality and security, offering unparalleled solutions that safeguard and
+              enhance your business.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="custom-card1">
+          <img src="i2.svg" class="custom-card1-icon" alt="Icon 2">
+          <div class="custom-card1-body">
+            <h5 class="custom-card1-title">RELENTLESS PURSUIT OF HIGH ROI</h5>
+            <p class="custom-card1-text">Vokke’s approach is ROI-centric. In fact, we had a project that soared by
+              3,500%, with continuous monthly growth of 34%. We’re committed to delivering substantial and measurable
+              financial returns for our clients.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3">
+        <div class="custom-card1">
+          <img src="i3.svg" class="custom-card1-icon" alt="Icon 3">
+          <div class="custom-card1-body">
+            <h5 class="custom-card1-title">THE LATEST #1 TECHNOLOGIES</h5>
+            <p class="custom-card1-text">At the forefront of technological innovation, Vokke harnesses the latest in AI
+              machine learning and data analytics. We equip your business with cutting-edge tools to stay competitive
+              and future-proof.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="custom-card1">
+          <img src="i4.svg" class="custom-card1-icon" alt="Icon 4">
+          <div class="custom-card1-body">
+            <h5 class="custom-card1-title">30+ GLOBAL TEAM THAT DELIVERS</h5>
+            <p class="custom-card1-text">Vokke’s diverse, global team of over 30+ specialists excel in rapidly
+              delivering tailored solutions, transforming innovative ideas into real-world applications swiftly with
+              exceptional precision.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="blog-section">
+    <div class="blog-slider-container">
+      <div class="blog-slider">
+        <!-- Slide 1 -->
+        <div class="slide active">
+          <div class="testimonial">
+            <p>
+              Vokke have been amazing & delivered excellent outcomes. We would highly recommend Vokke for software &
+              transformation projects!
+            </p>
+            <span>Aron Satchell - Director at Finura</span>
+            <div class="navigation-buttons">
+              <button class="nav-btn prev-btn"><i class="fa fa-arrow-left"></i></button>
+              <button class="nav-btn next-btn"><i class="fa fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="testimonial-image">
+            <img src="b1.jpeg" alt="Team Photo 1" />
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <div class="testimonial">
+            <p>
+              "Their dedication and technical expertise transformed our project into a resounding success!"
+            </p>
+            <span>Jane Doe - CEO at TechCorp</span>
+            <div class="navigation-buttons">
+              <button class="nav-btn prev-btn"><i class="fa fa-arrow-left"></i></button>
+              <button class="nav-btn next-btn"><i class="fa fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="testimonial-image">
+            <img src="b2.jpeg" alt="Team Photo 2" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="cta py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-md-start text-center">
+          <h2 class="fw-bold mb-4">Start unlocking tomorrow’s tech today</h2>
+          <button class="cta-button">Call (03) 9069 5488</button>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center mb-3">
+              <img src="cta1.png" alt="Free Consultation" class="cta-icon me-4">
+              <span class="info1">100% free consultation – the first one's on us</span>
+            </div>
+            <div class="col-12 d-flex align-items-center mb-3">
+              <img src="cta2.png" alt="Experience" class="cta-icon me-4">
+              <span class="info1">Bolstered by 10+ years of experience across global projects</span>
+            </div>
+            <div class="col-12 d-flex align-items-center">
+              <img src="cta3.png" alt="Custom Strategy" class="cta-icon me-4">
+              <span class="info1">Custom strategy & innovation delivered fast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="logo.png" alt="">
+
+        <div class="row">
+          <div class="col-md-6 contact-info">
+            <div class="mb-4 mt-5 d-flex">
+              <i class="fas fa-map-marker-alt me-3"></i>
+              <div>
+                <strong>Head Office:</strong>
+                <p class="mb-3">Level 35, 477 Collins St,<br> Melbourne, VIC, Australia</p>
+                <strong>Mailing Address:</strong>
+                <p class="mb-0">PO Box 573, Collins St West,<br> VIC, 8007, Australia</p>
+              </div>
+            </div>
+
+            <div class="mb-4 d-flex">
+              <i class="fas fa-phone me-3"></i>
+              <p class="mb-0">+61 (03) 9069 5488</p>
+            </div>
+            <div class="mb-4 d-flex">
+              <i class="fas fa-envelope me-3"></i>
+              <p class="mb-0">sales@vokke.com.au</p>
+            </div>
+            <div class="social-icons d-flex">
+              <a href="#" class="me-3"><i class="fab fa-facebook-square"></i></a>
+              <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <ul class="info-links mt-5">
+              <li><a href="">Information Security</a></li>
+              <li><a href="">Risk Management</a></li>
+              <li><a href="">Environmental Outlook</a></li>
+              <li><a href="">Legal</a></li>
+              <li><a href="">Support Desk</a></li>
+            </ul>
+          </div>
+
+
+        </div>
+        <div class="mt-4">
+          <img src="iso-27001.png.png" alt="">
+          <img src="iso-9001-e1694154465779.png.png" style="margin-right: 20px;" alt="">
+
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <div class="enquiry">
+          <h2>Make an enquiry</h2>
+          <form action="/submit-enquiry" method="post" class="row">
+            <div class="col-md-6 form-group">
+              <label for="name">Name*</label>
+              <input type="text" id="name" name="name" class="form-control" required />
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="area-of-interest">Area Of Interest</label>
+              <select id="area-of-interest" name="area-of-interest" class="form-control">
+                <option value="general">General Enquiry</option>
+                <option value="sales">Sales</option>
+                <option value="support">Support</option>
+              </select>
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" />
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="phone">Phone*</label>
+              <input type="tel" id="phone" name="phone" class="form-control" required />
+            </div>
+            <div class="col-md-12 form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="4"></textarea>
+            </div>
+            <div class="col-md-12">
+              <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="#" class="primary-button2">SUBMIT</a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+    </div>
+  </footer>
+  <div class="copy">
+    <p>&copy; Copyright 2025 Vokke</p>
+  </div>
+
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const nextBtns = document.querySelectorAll('.next-btn');
+    const prevBtns = document.querySelectorAll('.prev-btn');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    nextBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      });
+    });
+
+    prevBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      });
+    });
+
+    showSlide(currentSlide);
+  </script>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+    }
+
+    function toggleDropdown(element) {
+      element.classList.toggle('open');
+    }
+  </script>
+</body>
+
+</html>
